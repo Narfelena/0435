@@ -54,6 +54,7 @@ public class Picture
         sun.changeColor("yellow");
         sun.moveHorizontal(100);
         sun.changeSize(80);
+        sun.makeVisible();
         
         window = new Square();
         window.changeColor("green");
@@ -62,9 +63,6 @@ public class Picture
         window.changeSize(1000);
         window.makeVisible();
         
-        sun.makeVisible();
-        sun.slowMoveVertical(90);
-        sun.slowMoveVertical(-100);
     }
 
     /**
@@ -92,6 +90,15 @@ public class Picture
             window.changeColor("black");
             roof.changeColor("green");
             sun.changeColor("yellow");
+        }
+    }
+        public void moveSun()
+    {
+        if (wall != null)   // only if it's painted already...
+        {
+        sun.makeVisible();
+        sun.slowMoveVertical(90);
+        sun.slowMoveVertical(-100);
         }
     }
 }
