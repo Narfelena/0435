@@ -59,7 +59,7 @@ public class Picture
         sun2 = new Circle();
         sun2.changeColor("green");
         sun2.moveHorizontal(200);
-        sun2.moveVertical(-40);
+        sun2.moveVertical(-30);
         sun2.changeSize(80);
         sun2.makeVisible();
     }
